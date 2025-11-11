@@ -8,7 +8,8 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = {"runner", "steps"},
-        tags = "@UserFeature or @StoreFeature or @PetFeature",
-        plugin = {"pretty", "html:target/cucumber-report.html"}
+        tags = "@FindPetById or @AddNewPet",
+        plugin = {"pretty", "html:target/cucumber-report.html"},
+        monochrome = true
 )
 public class CucumberRunner {}

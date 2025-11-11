@@ -12,6 +12,7 @@ Feature: User Feature
       | value |
       | user1 |
 
+
   @Positive @LoginAndLogout
   Scenario:[P] Log in and Log out from the system
     Given [pet-store] prepare user data with username '1234' and password 'testing'
